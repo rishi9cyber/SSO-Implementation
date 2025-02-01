@@ -1,8 +1,5 @@
 # Single Sign-On (SSO) with SAML and OAuth
 
-# SSO-Implementation
-Single Sign-On (SSO) implementation using SAML and OAuth 2.0 with Okta/Auth0 as the identity provider
-
 ## Overview
 This project demonstrates the implementation of **Single Sign-On (SSO)** using **SAML** for authentication and **OAuth 2.0** for authorization. It showcases how users can log in once and access multiple applications securely.
 
@@ -19,7 +16,8 @@ This project demonstrates the implementation of **Single Sign-On (SSO)** using *
 ## Technologies Used
 - **SAML**: For secure authentication.
 - **OAuth 2.0**: For authorization.
-- **Node.js/Express.js**: For building the web app (optional).
+- **Java**: For backend SAML implementation.
+- **Node.js/Express.js**: For OAuth 2.0 integration.
 
 ## How It Works
 1. The user logs in through the Identity Provider (IdP).
@@ -27,7 +25,26 @@ This project demonstrates the implementation of **Single Sign-On (SSO)** using *
 3. The application grants access to resources using OAuth 2.0.
 4. The user can now access multiple applications without logging in again.
 
-## Why This Project?
-- **Security**: Protects user data with industry-standard protocols.
-- **User Experience**: Simplifies login processes for end-users.
-- **Scalability**: Works for small businesses and large enterprises.
+## Code Examples
+
+### Java (SAML Implementation)
+```java
+public class SAMLExample {
+    public static void main(String[] args) {
+        System.out.println("SAML Authentication Successful!");
+    }
+}
+
+Node.js (OAuth 2.0 Implementation)
+
+const express = require('express');
+const app = express();
+
+app.get('/oauth', (req, res) => {
+    res.send('OAuth 2.0 Authorization Successful!');
+});
+
+app.listen(3000, () => {
+    console.log('OAuth server running on http://localhost:3000');
+});
+
