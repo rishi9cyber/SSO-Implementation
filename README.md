@@ -27,14 +27,13 @@ This project demonstrates the implementation of **Single Sign-On (SSO)** using *
 
 ## Code Examples
 
-### Java (SAML Implementation)
+### Java (SAML Implementation) & Node.js (OAuth 2.0 Implementation)
 ```java
 public class SAMLExample {
     public static void main(String[] args) {
         System.out.println("SAML Authentication Successful!");
     }
 }
-### Node.js (OAuth 2.0 Implementation)
 
 Node.js (OAuth 2.0 Implementation)
 
